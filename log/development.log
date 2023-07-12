@@ -1,0 +1,2434 @@
+  [1m[35m (22.3ms)[0m  [1m[35mCREATE DATABASE `msgbook_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE DATABASE `msgbook_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+Started GET "/" for 127.0.0.1 at 2023-07-12 00:05:16 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 213.2ms | Allocations: 695)
+Completed 200 OK in 1603ms (Views: 441.7ms | ActiveRecord: 0.0ms | Allocations: 8151)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 00:12:04 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 114)
+  Rendered layout layouts/application.html.erb (Duration: 2779.0ms | Allocations: 103690)
+Completed 500 Internal Server Error in 2857ms (Allocations: 104623)
+
+
+  
+ActionView::Template::Error (Permission denied @ rb_file_s_rename - (D:/Rails_MsgBook/Addbook/tmp/cache/assets/sprockets/v4.0.0/sI/sIkKIhqm3TScQtMJBHaYNlff_FOpVd54ubfxeIqYCtw.cache.28580.14088.124694, D:/Rails_MsgBook/Addbook/tmp/cache/assets/sprockets/v4.0.0/sI/sIkKIhqm3TScQtMJBHaYNlff_FOpVd54ubfxeIqYCtw.cache)):
+  
+sprockets (4.2.0) lib/sprockets/path_utils.rb:362:in `rename'
+sprockets (4.2.0) lib/sprockets/path_utils.rb:362:in `atomic_write'
+sprockets (4.2.0) lib/sprockets/cache/file_store.rb:112:in `set'
+sprockets (4.2.0) lib/sprockets/cache.rb:227:in `set'
+sprockets (4.2.0) lib/sprockets/cache.rb:93:in `fetch'
+sprockets (4.2.0) lib/sprockets/base.rb:71:in `file_digest'
+sprockets (4.2.0) lib/sprockets/unloaded_asset.rb:105:in `dependency_history_key'
+sprockets (4.2.0) lib/sprockets/loader.rb:324:in `fetch_asset_from_dependency_cache'
+sprockets (4.2.0) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.2.0) lib/sprockets/cached_environment.rb:44:in `block in load'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:207:in `block in fetch_or_store'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:187:in `fetch'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:206:in `fetch_or_store'
+sprockets (4.2.0) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.2.0) lib/sprockets/context.rb:117:in `load'
+sprockets (4.2.0) lib/sprockets/context.rb:145:in `depend_on_asset'
+sprockets (4.2.0) lib/sprockets/context.rb:185:in `link_asset'
+sprockets-rails (3.4.2) lib/sprockets/rails/context.rb:27:in `compute_asset_path'
+actionview (7.0.6) lib/action_view/helpers/asset_url_helper.rb:203:in `asset_path'
+sprockets-rails (3.4.2) lib/sprockets/rails/sourcemapping_url_processor.rb:41:in `sourcemap_asset_path'
+sprockets-rails (3.4.2) lib/sprockets/rails/sourcemapping_url_processor.rb:34:in `resolved_sourcemap_comment'
+sprockets-rails (3.4.2) lib/sprockets/rails/sourcemapping_url_processor.rb:15:in `block in call'
+sprockets-rails (3.4.2) lib/sprockets/rails/sourcemapping_url_processor.rb:11:in `gsub'
+sprockets-rails (3.4.2) lib/sprockets/rails/sourcemapping_url_processor.rb:11:in `call'
+sprockets (4.2.0) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.2.0) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.2.0) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.2.0) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.2.0) lib/sprockets/loader.rb:182:in `load_from_unloaded'
+sprockets (4.2.0) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.2.0) lib/sprockets/loader.rb:337:in `fetch_asset_from_dependency_cache'
+sprockets (4.2.0) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.2.0) lib/sprockets/cached_environment.rb:44:in `block in load'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:207:in `block in fetch_or_store'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:187:in `fetch'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:206:in `fetch_or_store'
+sprockets (4.2.0) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.2.0) lib/sprockets/bundle.rb:27:in `call'
+sprockets (4.2.0) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.2.0) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.2.0) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.2.0) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.2.0) lib/sprockets/loader.rb:182:in `load_from_unloaded'
+sprockets (4.2.0) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.2.0) lib/sprockets/loader.rb:337:in `fetch_asset_from_dependency_cache'
+sprockets (4.2.0) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.2.0) lib/sprockets/cached_environment.rb:44:in `block in load'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:207:in `block in fetch_or_store'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:187:in `fetch'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:206:in `fetch_or_store'
+sprockets (4.2.0) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.2.0) lib/sprockets/base.rb:81:in `find_asset'
+sprockets (4.2.0) lib/sprockets/base.rb:88:in `find_all_linked_assets'
+sprockets (4.2.0) lib/sprockets/manifest.rb:125:in `each'
+sprockets (4.2.0) lib/sprockets/manifest.rb:125:in `to_a'
+sprockets (4.2.0) lib/sprockets/manifest.rb:125:in `block (2 levels) in find'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:24:in `block in execute'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `block in synchronize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `synchronize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `synchronize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:22:in `execute'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/promise.rb:564:in `block in realize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:352:in `run_task'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:343:in `block (3 levels) in create_worker'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `loop'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `block (2 levels) in create_worker'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `catch'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `block in create_worker'
+Started GET "/" for 127.0.0.1 at 2023-07-12 00:14:18 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 203.0ms | Allocations: 22109)
+Completed 200 OK in 214ms (Views: 210.1ms | Allocations: 22382)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 00:33:39 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 17.1ms | Allocations: 330)
+  Rendered layout layouts/application.html.erb (Duration: 2473.2ms | Allocations: 90481)
+Completed 200 OK in 2706ms (Views: 2550.2ms | ActiveRecord: 0.0ms | Allocations: 94849)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 00:34:18 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 100)
+  Rendered layout layouts/application.html.erb (Duration: 54.0ms | Allocations: 3079)
+Completed 200 OK in 91ms (Views: 85.0ms | ActiveRecord: 0.0ms | Allocations: 3884)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 00:41:30 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 1050.7ms | Allocations: 42130)
+Completed 200 OK in 1073ms (Views: 1071.8ms | Allocations: 42392)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 00:42:15 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 67.6ms | Allocations: 2753)
+Completed 200 OK in 77ms (Views: 73.9ms | Allocations: 3014)
+
+
+  [1m[35m (181.8ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  [1m[35m (21.9ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT GET_LOCK('4708605417071539200', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (5.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateAddbooks (20230711192836)
+  [1m[35m (41.1ms)[0m  [1m[35mCREATE TABLE `addbooks` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `age` int, `mob` int, `gender` varchar(255), `address` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (7.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20230711192836')[0m
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2023-07-11 19:35:00.659520', '2023-07-11 19:35:00.659520')[0m
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT RELEASE_LOCK('4708605417071539200')[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAddbook Create (1.6ms)[0m  [1m[32mINSERT INTO `addbooks` (`name`, `age`, `mob`, `gender`, `address`, `created_at`, `updated_at`) VALUES ('Pankaj', 26, 1234567, 'male', 'Gondia', '2023-07-11 19:55:53.282587', '2023-07-11 19:55:53.282587')[0m
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT GET_LOCK('4708605417071539200', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateAddbooks (20230711192836)
+  [1m[35m (36.6ms)[0m  [1m[35mDROP TABLE `addbooks`[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (3.6ms)[0m  [1m[31mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20230711192836'[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT RELEASE_LOCK('4708605417071539200')[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('4708605417071539200', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (4.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateAddbooks (20230711192836)
+  [1m[35m (31.2ms)[0m  [1m[35mCREATE TABLE `addbooks` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `age` int, `mob` varchar(255), `gender` varchar(255), `address` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20230711192836')[0m
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT RELEASE_LOCK('4708605417071539200')[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mAddbook Load (0.8ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAddbook Create (1.0ms)[0m  [1m[32mINSERT INTO `addbooks` (`name`, `age`, `mob`, `gender`, `address`, `created_at`, `updated_at`) VALUES ('Pankaj', 26, '8623002395', 'Male', 'Gondia', '2023-07-11 20:04:05.966495', '2023-07-11 20:04:05.966495')[0m
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2023-07-12 01:42:04 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 10)
+  Rendered layout layouts/application.html.erb (Duration: 59.7ms | Allocations: 2781)
+Completed 200 OK in 68ms (Views: 65.0ms | ActiveRecord: 0.0ms | Allocations: 3301)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 01:45:03 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 1016.9ms | Allocations: 42104)
+Completed 200 OK in 1028ms (Views: 1027.6ms | ActiveRecord: 0.0ms | Allocations: 42361)
+
+
+  [1m[36mAddbook Load (0.9ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+Started GET "/" for 127.0.0.1 at 2023-07-12 01:59:08 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 51.1ms | Allocations: 2702)
+Completed 200 OK in 61ms (Views: 59.5ms | Allocations: 2959)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 01:59:20 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 48.3ms | Allocations: 2696)
+Completed 200 OK in 54ms (Views: 53.5ms | Allocations: 2953)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 02:03:05 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 603.5ms | Allocations: 42123)
+Completed 200 OK in 620ms (Views: 618.5ms | Allocations: 42383)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 02:03:09 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 42.4ms | Allocations: 2706)
+Completed 200 OK in 50ms (Views: 49.5ms | Allocations: 2963)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 02:04:11 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 565.4ms | Allocations: 42146)
+Completed 200 OK in 591ms (Views: 590.5ms | Allocations: 42403)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 02:07:17 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 313)
+  Rendered layout layouts/application.html.erb (Duration: 1751.5ms | Allocations: 66931)
+Completed 200 OK in 1841ms (Views: 1774.5ms | ActiveRecord: 0.0ms | Allocations: 71289)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 02:07:55 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 586.3ms | Allocations: 42134)
+Completed 200 OK in 604ms (Views: 602.6ms | ActiveRecord: 0.0ms | Allocations: 42395)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 02:07:57 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.1ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 53ms (Views: 35.2ms | ActiveRecord: 11.0ms | Allocations: 7864)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 02:53:29 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 19.9ms | Allocations: 313)
+  Rendered layout layouts/application.html.erb (Duration: 2398.9ms | Allocations: 67329)
+Completed 200 OK in 2684ms (Views: 2450.1ms | ActiveRecord: 0.0ms | Allocations: 71749)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 02:53:34 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.9ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 147ms (Views: 74.1ms | ActiveRecord: 17.4ms | Allocations: 7956)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 02:56:28 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 313)
+  Rendered layout layouts/application.html.erb (Duration: 2092.7ms | Allocations: 67534)
+Completed 200 OK in 2210ms (Views: 2117.3ms | ActiveRecord: 0.0ms | Allocations: 71892)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 02:56:32 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (2.5ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 79ms (Views: 61.2ms | ActiveRecord: 10.5ms | Allocations: 7865)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 03:12:35 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (3.5ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 42ms (Views: 41.6ms | ActiveRecord: 5.5ms | Allocations: 1002)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 03:13:18 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 313)
+  Rendered layout layouts/application.html.erb (Duration: 2197.5ms | Allocations: 67440)
+Completed 200 OK in 2335ms (Views: 2218.6ms | ActiveRecord: 0.0ms | Allocations: 71798)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 03:13:21 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (4.0ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 82ms (Views: 57.2ms | ActiveRecord: 16.3ms | Allocations: 7866)
+
+
+Started GET "/addbooks/create" for 127.0.0.1 at 2023-07-12 03:19:40 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/addbooks/create"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-12 03:19:44 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 624.7ms | Allocations: 42198)
+Completed 200 OK in 636ms (Views: 634.0ms | Allocations: 42460)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 03:19:46 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (4.6ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 30ms (Views: 29.7ms | ActiveRecord: 8.9ms | Allocations: 1001)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 03:20:57 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.8ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.8ms | Allocations: 873)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 03:20:58 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 81.3ms | Allocations: 3277)
+Completed 200 OK in 85ms (Views: 84.7ms | ActiveRecord: 0.0ms | Allocations: 3535)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 03:20:59 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (3.4ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 6.7ms | ActiveRecord: 3.4ms | Allocations: 873)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 03:21:34 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 29.8ms | Allocations: 2331)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms | Allocations: 2586)
+
+
+  
+ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    11:   </head>
+    12: 
+  
+app/views/layouts/application.html.erb:9
+Started GET "/" for 127.0.0.1 at 2023-07-12 03:22:42 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 29.5ms | Allocations: 313)
+  Rendered layout layouts/application.html.erb (Duration: 122.3ms | Allocations: 3736)
+Completed 500 Internal Server Error in 242ms (ActiveRecord: 0.0ms | Allocations: 8036)
+
+
+  
+ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    11:   </head>
+    12: 
+  
+app/views/layouts/application.html.erb:9
+Started GET "/" for 127.0.0.1 at 2023-07-12 03:24:44 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 313)
+  Rendered layout layouts/application.html.erb (Duration: 1500.3ms | Allocations: 27859)
+Completed 200 OK in 1676ms (Views: 1538.7ms | ActiveRecord: 0.0ms | Allocations: 32221)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 03:24:47 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.9ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 99ms (Views: 73.7ms | ActiveRecord: 17.1ms | Allocations: 7865)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 03:25:53 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.6ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.6ms | Allocations: 881)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 03:26:56 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.5ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.5ms | Allocations: 881)
+
+
+Started POST "/api/v1/addbooks/create" for 127.0.0.1 at 2023-07-12 03:27:37 +0530
+Processing by Api::V1::AddbooksController#create as */*
+  Parameters: {"name"=>"Pankaj", "age"=>"25", "gender"=>"M", "mob"=>"8623002395", "address"=>"Gondia", "addbook"=>{"name"=>"Pankaj", "age"=>"25", "mob"=>"8623002395", "gender"=>"M", "address"=>"Gondia"}}
+[31mUnpermitted parameter: :addbook. Context: { controller: Api::V1::AddbooksController, action: create, request: #<ActionDispatch::Request:0x000001fd6d5e2308>, params: {"name"=>"Pankaj", "age"=>"25", "gender"=>"M", "mob"=>"8623002395", "address"=>"Gondia", "controller"=>"api/v1/addbooks", "action"=>"create", "addbook"=>{"name"=>"Pankaj", "age"=>"25", "mob"=>"8623002395", "gender"=>"M", "address"=>"Gondia"}} }[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:8:in `create'
+  [1m[36mAddbook Create (6.2ms)[0m  [1m[32mINSERT INTO `addbooks` (`name`, `age`, `mob`, `gender`, `address`, `created_at`, `updated_at`) VALUES ('Pankaj', 25, '8623002395', 'M', 'Gondia', '2023-07-11 21:57:37.268999', '2023-07-11 21:57:37.268999')[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (6.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:8:in `create'
+Completed 200 OK in 40ms (Views: 1.3ms | ActiveRecord: 13.3ms | Allocations: 3675)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 03:27:37 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.7ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.7ms | Allocations: 1012)
+
+
+Started POST "/api/v1/addbooks/create" for 127.0.0.1 at 2023-07-12 03:28:33 +0530
+Processing by Api::V1::AddbooksController#create as */*
+  Parameters: {"name"=>"Ankush", "age"=>"23", "gender"=>"M", "mob"=>"89876675", "address"=>"Gondia", "addbook"=>{"name"=>"Ankush", "age"=>"23", "mob"=>"89876675", "gender"=>"M", "address"=>"Gondia"}}
+[31mUnpermitted parameter: :addbook. Context: { controller: Api::V1::AddbooksController, action: create, request: #<ActionDispatch::Request:0x000001fd711397f8>, params: {"name"=>"Ankush", "age"=>"23", "gender"=>"M", "mob"=>"89876675", "address"=>"Gondia", "controller"=>"api/v1/addbooks", "action"=>"create", "addbook"=>{"name"=>"Ankush", "age"=>"23", "mob"=>"89876675", "gender"=>"M", "address"=>"Gondia"}} }[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:8:in `create'
+  [1m[36mAddbook Create (4.6ms)[0m  [1m[32mINSERT INTO `addbooks` (`name`, `age`, `mob`, `gender`, `address`, `created_at`, `updated_at`) VALUES ('Ankush', 23, '89876675', 'M', 'Gondia', '2023-07-11 21:58:33.669529', '2023-07-11 21:58:33.669529')[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:8:in `create'
+Completed 200 OK in 27ms (Views: 1.3ms | ActiveRecord: 8.6ms | Allocations: 2448)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 03:28:33 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.5ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.5ms | Allocations: 1151)
+
+
+Started POST "/api/v1/addbooks/create" for 127.0.0.1 at 2023-07-12 03:29:12 +0530
+Processing by Api::V1::AddbooksController#create as */*
+  Parameters: {"name"=>"Uday", "age"=>"5", "gender"=>"M", "mob"=>"6778686243", "address"=>"BhoPal", "addbook"=>{"name"=>"Uday", "age"=>"5", "mob"=>"6778686243", "gender"=>"M", "address"=>"BhoPal"}}
+[31mUnpermitted parameter: :addbook. Context: { controller: Api::V1::AddbooksController, action: create, request: #<ActionDispatch::Request:0x000001fd723a82b8>, params: {"name"=>"Uday", "age"=>"5", "gender"=>"M", "mob"=>"6778686243", "address"=>"BhoPal", "controller"=>"api/v1/addbooks", "action"=>"create", "addbook"=>{"name"=>"Uday", "age"=>"5", "mob"=>"6778686243", "gender"=>"M", "address"=>"BhoPal"}} }[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:8:in `create'
+  [1m[36mAddbook Create (1.3ms)[0m  [1m[32mINSERT INTO `addbooks` (`name`, `age`, `mob`, `gender`, `address`, `created_at`, `updated_at`) VALUES ('Uday', 5, '6778686243', 'M', 'BhoPal', '2023-07-11 21:59:12.960697', '2023-07-11 21:59:12.960697')[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:8:in `create'
+Completed 200 OK in 26ms (Views: 1.7ms | ActiveRecord: 4.9ms | Allocations: 2473)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 03:29:13 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.2ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 12ms (Views: 9.4ms | ActiveRecord: 1.2ms | Allocations: 1291)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 03:33:17 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 967.3ms | Allocations: 66741)
+Completed 200 OK in 971ms (Views: 970.5ms | ActiveRecord: 0.0ms | Allocations: 67001)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 03:33:19 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.9ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.9ms | Allocations: 1291)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 03:37:10 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 65.8ms | Allocations: 2749)
+Completed 200 OK in 71ms (Views: 70.4ms | ActiveRecord: 0.0ms | Allocations: 3007)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 03:37:10 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.9ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.9ms | Allocations: 1291)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 03:37:26 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 693.8ms | Allocations: 42214)
+Completed 200 OK in 698ms (Views: 697.7ms | ActiveRecord: 0.0ms | Allocations: 42472)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 03:37:27 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.5ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.5ms | Allocations: 1291)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 03:41:36 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 621.1ms | Allocations: 42265)
+Completed 200 OK in 626ms (Views: 625.0ms | ActiveRecord: 0.0ms | Allocations: 42522)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 03:41:37 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.2ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 1.2ms | Allocations: 1291)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 03:46:41 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 668.8ms | Allocations: 42297)
+Completed 200 OK in 683ms (Views: 682.7ms | ActiveRecord: 0.0ms | Allocations: 42554)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 03:46:42 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.9ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.9ms | Allocations: 1291)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 03:51:08 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 617.5ms | Allocations: 42283)
+Completed 200 OK in 621ms (Views: 620.7ms | ActiveRecord: 0.0ms | Allocations: 42540)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 03:51:09 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (4.5ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 18ms (Views: 13.0ms | ActiveRecord: 4.5ms | Allocations: 1291)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 03:54:54 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 597.4ms | Allocations: 42291)
+Completed 200 OK in 603ms (Views: 600.0ms | ActiveRecord: 0.0ms | Allocations: 42548)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 03:54:56 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.2ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 1.2ms | Allocations: 1291)
+
+
+Started DELETE "/api/v1/addbooks/destroy/1" for 127.0.0.1 at 2023-07-12 03:55:09 +0530
+  
+ActionController::RoutingError (No route matches [DELETE] "/api/v1/addbooks/destroy/1"):
+  
+Started DELETE "/api/v1/addbooks/destroy/1" for 127.0.0.1 at 2023-07-12 03:55:11 +0530
+  
+ActionController::RoutingError (No route matches [DELETE] "/api/v1/addbooks/destroy/1"):
+  
+Started DELETE "/api/v1/addbooks/destroy/1" for 127.0.0.1 at 2023-07-12 03:55:12 +0530
+  
+ActionController::RoutingError (No route matches [DELETE] "/api/v1/addbooks/destroy/1"):
+  
+Started DELETE "/api/v1/addbooks/destroy/1" for 127.0.0.1 at 2023-07-12 03:55:12 +0530
+  
+ActionController::RoutingError (No route matches [DELETE] "/api/v1/addbooks/destroy/1"):
+  
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 03:57:06 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.0ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 1.0ms | Allocations: 1292)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 03:57:07 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 701.0ms | Allocations: 42287)
+Completed 200 OK in 709ms (Views: 708.9ms | ActiveRecord: 0.0ms | Allocations: 42545)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 03:57:09 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.6ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.6ms | Allocations: 1291)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 03:57:57 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 253.7ms | Allocations: 26912)
+Completed 200 OK in 261ms (Views: 259.2ms | ActiveRecord: 0.0ms | Allocations: 27169)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 03:57:58 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.7ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.7ms | Allocations: 1291)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 03:58:54 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 64.3ms | Allocations: 2762)
+Completed 200 OK in 75ms (Views: 73.7ms | ActiveRecord: 0.0ms | Allocations: 3019)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 03:58:55 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.7ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.7ms | Allocations: 1291)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 04:00:05 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 313)
+  Rendered layout layouts/application.html.erb (Duration: 1304.6ms | Allocations: 28544)
+Completed 200 OK in 1408ms (Views: 1335.3ms | ActiveRecord: 0.0ms | Allocations: 32902)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:00:08 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (4.5ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 90ms (Views: 63.2ms | ActiveRecord: 16.2ms | Allocations: 8283)
+
+
+Started GET "/addbooks/create" for 127.0.0.1 at 2023-07-12 04:01:33 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/addbooks/create"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-12 04:01:37 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 630.7ms | Allocations: 42376)
+Completed 200 OK in 634ms (Views: 633.7ms | ActiveRecord: 0.0ms | Allocations: 42639)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:01:39 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.7ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.7ms | Allocations: 1292)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:04:43 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.8ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.8ms | Allocations: 1291)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 04:04:44 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 24.5ms | Allocations: 2710)
+Completed 200 OK in 28ms (Views: 26.5ms | ActiveRecord: 0.0ms | Allocations: 2970)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:04:44 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.2ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 1.2ms | Allocations: 1298)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:06:16 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.6ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.6ms | Allocations: 1291)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 04:06:18 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 30.9ms | Allocations: 2695)
+Completed 200 OK in 35ms (Views: 34.4ms | ActiveRecord: 0.0ms | Allocations: 2953)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:06:18 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.6ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.6ms | Allocations: 1298)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:11:46 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.8ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 19ms (Views: 16.3ms | ActiveRecord: 0.8ms | Allocations: 1291)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 04:11:48 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 636.6ms | Allocations: 42292)
+Completed 200 OK in 644ms (Views: 643.9ms | ActiveRecord: 0.0ms | Allocations: 42551)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:11:49 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.8ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.8ms | Allocations: 1291)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 04:12:42 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 588.9ms | Allocations: 42269)
+Completed 200 OK in 611ms (Views: 606.8ms | ActiveRecord: 0.0ms | Allocations: 42527)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:12:43 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.5ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 0.5ms | Allocations: 1291)
+
+
+Started GET "/addbooks/create" for 127.0.0.1 at 2023-07-12 04:13:45 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/addbooks/create"):
+  
+Started GET "/addbooks/create" for 127.0.0.1 at 2023-07-12 04:13:45 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/addbooks/create"):
+  
+Started GET "/addbooks/create" for 127.0.0.1 at 2023-07-12 04:14:02 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/addbooks/create"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-12 04:14:06 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 42.2ms | Allocations: 2738)
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.0ms | Allocations: 2996)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:14:07 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.9ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 0.9ms | Allocations: 1294)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 04:16:52 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 313)
+  Rendered layout layouts/application.html.erb (Duration: 2039.3ms | Allocations: 68242)
+Completed 200 OK in 2145ms (Views: 2062.6ms | ActiveRecord: 0.0ms | Allocations: 72600)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:16:55 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.7ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 83ms (Views: 58.9ms | ActiveRecord: 14.4ms | Allocations: 8283)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 04:18:07 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 313)
+  Rendered layout layouts/application.html.erb (Duration: 192.3ms | Allocations: 22788)
+Completed 200 OK in 275ms (Views: 217.4ms | ActiveRecord: 0.0ms | Allocations: 27146)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:18:08 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.1ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 57ms (Views: 35.9ms | ActiveRecord: 13.7ms | Allocations: 8283)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 04:18:42 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 25.3ms | Allocations: 2709)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.0ms | Allocations: 2970)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:18:42 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.9ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 0.9ms | Allocations: 1299)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 04:19:57 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 2677)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.0ms | Allocations: 2937)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:19:58 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.7ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.7ms | Allocations: 1298)
+
+
+Started GET "/addbooks/create" for 127.0.0.1 at 2023-07-12 04:20:18 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/addbooks/create"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-12 04:20:22 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 2674)
+Completed 200 OK in 23ms (Views: 22.7ms | ActiveRecord: 0.0ms | Allocations: 2933)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:20:23 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.7ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.7ms | Allocations: 1292)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 04:28:28 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 313)
+  Rendered layout layouts/application.html.erb (Duration: 289.0ms | Allocations: 22810)
+Completed 200 OK in 400ms (Views: 332.1ms | ActiveRecord: 0.0ms | Allocations: 27169)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:28:29 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.8ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 59ms (Views: 44.2ms | ActiveRecord: 8.8ms | Allocations: 8283)
+
+
+Started GET "/addbooks/create" for 127.0.0.1 at 2023-07-12 04:29:36 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/addbooks/create"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-12 04:29:40 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 40.5ms | Allocations: 2747)
+Completed 200 OK in 48ms (Views: 47.4ms | ActiveRecord: 0.0ms | Allocations: 3010)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:29:41 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.8ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.8ms | Allocations: 1292)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 04:30:12 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 36.9ms | Allocations: 2627)
+Completed 200 OK in 42ms (Views: 41.2ms | ActiveRecord: 0.0ms | Allocations: 2885)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:30:13 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.6ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.6ms | Allocations: 1299)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 04:30:35 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 34.6ms | Allocations: 2684)
+Completed 200 OK in 38ms (Views: 37.6ms | ActiveRecord: 0.0ms | Allocations: 2941)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:30:36 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.7ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.7ms | Allocations: 1299)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 04:39:09 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 313)
+  Rendered layout layouts/application.html.erb (Duration: 2152.8ms | Allocations: 68756)
+Completed 200 OK in 2287ms (Views: 2180.5ms | ActiveRecord: 0.0ms | Allocations: 73114)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:39:12 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.1ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 85ms (Views: 67.2ms | ActiveRecord: 12.0ms | Allocations: 8286)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:41:09 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.4ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 1.4ms | Allocations: 1299)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 04:41:10 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 553.1ms | Allocations: 42264)
+Completed 200 OK in 561ms (Views: 559.8ms | ActiveRecord: 0.0ms | Allocations: 42525)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:41:11 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.7ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.7ms | Allocations: 1298)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 04:41:19 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 2696)
+Completed 200 OK in 26ms (Views: 25.7ms | ActiveRecord: 0.0ms | Allocations: 2953)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:41:19 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.7ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.7ms | Allocations: 1291)
+
+
+Started GET "/addbooks/create" for 127.0.0.1 at 2023-07-12 04:41:23 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/addbooks/create"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-12 04:41:33 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 2724)
+Completed 200 OK in 22ms (Views: 21.7ms | ActiveRecord: 0.0ms | Allocations: 2984)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:41:33 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.6ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.6ms | Allocations: 1292)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 04:43:12 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 560.2ms | Allocations: 42229)
+Completed 200 OK in 564ms (Views: 563.5ms | ActiveRecord: 0.0ms | Allocations: 42489)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:43:13 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.8ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.8ms | Allocations: 1291)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 04:44:06 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 579.9ms | Allocations: 42263)
+Completed 200 OK in 589ms (Views: 588.4ms | ActiveRecord: 0.0ms | Allocations: 42520)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:44:08 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.7ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.7ms | Allocations: 1291)
+
+
+Started GET "/addbooks/create" for 127.0.0.1 at 2023-07-12 04:45:10 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/addbooks/create"):
+  
+Started GET "/addbooks/create" for 127.0.0.1 at 2023-07-12 04:45:11 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/addbooks/create"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-12 04:47:07 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 313)
+  Rendered layout layouts/application.html.erb (Duration: 2224.4ms | Allocations: 68825)
+Completed 200 OK in 2324ms (Views: 2249.0ms | ActiveRecord: 0.0ms | Allocations: 73183)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:47:11 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (4.0ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 72ms (Views: 51.3ms | ActiveRecord: 12.3ms | Allocations: 8283)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:52:22 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.9ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.9ms | Allocations: 1299)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 04:52:24 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 877.7ms | Allocations: 42241)
+Completed 200 OK in 892ms (Views: 891.2ms | ActiveRecord: 0.0ms | Allocations: 42502)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:52:26 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.7ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 14ms (Views: 11.3ms | ActiveRecord: 0.7ms | Allocations: 1291)
+
+
+Started POST "/api/v1/addbooks/create" for 127.0.0.1 at 2023-07-12 04:52:45 +0530
+Processing by Api::V1::AddbooksController#create as */*
+  Parameters: {"name"=>"pankj", "age"=>"24", "gender"=>"m", "mob"=>"89797", "address"=>"gfghfhfg", "addbook"=>{"name"=>"pankj", "age"=>"24", "mob"=>"89797", "gender"=>"m", "address"=>"gfghfhfg"}}
+[31mUnpermitted parameter: :addbook. Context: { controller: Api::V1::AddbooksController, action: create, request: #<ActionDispatch::Request:0x0000020ac5a1abe0>, params: {"name"=>"pankj", "age"=>"24", "gender"=>"m", "mob"=>"89797", "address"=>"gfghfhfg", "controller"=>"api/v1/addbooks", "action"=>"create", "addbook"=>{"name"=>"pankj", "age"=>"24", "mob"=>"89797", "gender"=>"m", "address"=>"gfghfhfg"}} }[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:8:in `create'
+  [1m[36mAddbook Create (2.5ms)[0m  [1m[32mINSERT INTO `addbooks` (`name`, `age`, `mob`, `gender`, `address`, `created_at`, `updated_at`) VALUES ('pankj', 24, '89797', 'm', 'gfghfhfg', '2023-07-11 23:22:45.180335', '2023-07-11 23:22:45.180335')[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:8:in `create'
+Completed 200 OK in 30ms (Views: 1.8ms | ActiveRecord: 8.1ms | Allocations: 3582)
+
+
+Started POST "/api/v1/addbooks/create" for 127.0.0.1 at 2023-07-12 04:52:46 +0530
+Processing by Api::V1::AddbooksController#create as */*
+  Parameters: {"name"=>"pankj", "age"=>"24", "gender"=>"m", "mob"=>"89797", "address"=>"gfghfhfg", "addbook"=>{"name"=>"pankj", "age"=>"24", "mob"=>"89797", "gender"=>"m", "address"=>"gfghfhfg"}}
+[31mUnpermitted parameter: :addbook. Context: { controller: Api::V1::AddbooksController, action: create, request: #<ActionDispatch::Request:0x0000020ac5b08de0>, params: {"name"=>"pankj", "age"=>"24", "gender"=>"m", "mob"=>"89797", "address"=>"gfghfhfg", "controller"=>"api/v1/addbooks", "action"=>"create", "addbook"=>{"name"=>"pankj", "age"=>"24", "mob"=>"89797", "gender"=>"m", "address"=>"gfghfhfg"}} }[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:8:in `create'
+  [1m[36mAddbook Create (4.9ms)[0m  [1m[32mINSERT INTO `addbooks` (`name`, `age`, `mob`, `gender`, `address`, `created_at`, `updated_at`) VALUES ('pankj', 24, '89797', 'm', 'gfghfhfg', '2023-07-11 23:22:47.110022', '2023-07-11 23:22:47.110022')[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:8:in `create'
+Completed 200 OK in 34ms (Views: 1.7ms | ActiveRecord: 7.9ms | Allocations: 2485)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:53:30 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.6ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 14ms (Views: 11.8ms | ActiveRecord: 0.6ms | Allocations: 1578)
+
+
+Started POST "/api/v1/addbooks/create" for 127.0.0.1 at 2023-07-12 04:53:56 +0530
+Processing by Api::V1::AddbooksController#create as */*
+  Parameters: {"name"=>"gfffyfyfytg", "age"=>"23", "gender"=>"m", "mob"=>"89777", "address"=>"nbjhh", "addbook"=>{"name"=>"gfffyfyfytg", "age"=>"23", "mob"=>"89777", "gender"=>"m", "address"=>"nbjhh"}}
+[31mUnpermitted parameter: :addbook. Context: { controller: Api::V1::AddbooksController, action: create, request: #<ActionDispatch::Request:0x0000020ac5bd39a0>, params: {"name"=>"gfffyfyfytg", "age"=>"23", "gender"=>"m", "mob"=>"89777", "address"=>"nbjhh", "controller"=>"api/v1/addbooks", "action"=>"create", "addbook"=>{"name"=>"gfffyfyfytg", "age"=>"23", "mob"=>"89777", "gender"=>"m", "address"=>"nbjhh"}} }[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:8:in `create'
+  [1m[36mAddbook Create (5.9ms)[0m  [1m[32mINSERT INTO `addbooks` (`name`, `age`, `mob`, `gender`, `address`, `created_at`, `updated_at`) VALUES ('gfffyfyfytg', 23, '89777', 'm', 'nbjhh', '2023-07-11 23:23:56.365384', '2023-07-11 23:23:56.365384')[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:8:in `create'
+Completed 200 OK in 35ms (Views: 8.5ms | ActiveRecord: 9.7ms | Allocations: 2473)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:54:46 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.8ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 16ms (Views: 13.9ms | ActiveRecord: 0.8ms | Allocations: 1711)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 04:54:47 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 715.6ms | Allocations: 42321)
+Completed 200 OK in 720ms (Views: 718.2ms | ActiveRecord: 0.0ms | Allocations: 42580)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:54:49 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.9ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 18ms (Views: 14.0ms | ActiveRecord: 0.9ms | Allocations: 1708)
+
+
+Started POST "/api/v1/addbooks/create" for 127.0.0.1 at 2023-07-12 04:55:51 +0530
+Processing by Api::V1::AddbooksController#create as */*
+  Parameters: {"name"=>"Shrii", "age"=>"6", "gender"=>"m", "mob"=>"8928109467", "address"=>"Deori", "addbook"=>{"name"=>"Shrii", "age"=>"6", "mob"=>"8928109467", "gender"=>"m", "address"=>"Deori"}}
+[31mUnpermitted parameter: :addbook. Context: { controller: Api::V1::AddbooksController, action: create, request: #<ActionDispatch::Request:0x0000020ac533aa00>, params: {"name"=>"Shrii", "age"=>"6", "gender"=>"m", "mob"=>"8928109467", "address"=>"Deori", "controller"=>"api/v1/addbooks", "action"=>"create", "addbook"=>{"name"=>"Shrii", "age"=>"6", "mob"=>"8928109467", "gender"=>"m", "address"=>"Deori"}} }[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:8:in `create'
+  [1m[36mAddbook Create (1.1ms)[0m  [1m[32mINSERT INTO `addbooks` (`name`, `age`, `mob`, `gender`, `address`, `created_at`, `updated_at`) VALUES ('Shrii', 6, '8928109467', 'm', 'Deori', '2023-07-11 23:25:51.922000', '2023-07-11 23:25:51.922000')[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:8:in `create'
+Completed 200 OK in 20ms (Views: 1.5ms | ActiveRecord: 3.3ms | Allocations: 2445)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:55:52 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.7ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.7ms | Allocations: 1847)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 04:56:40 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 26.2ms | Allocations: 2688)
+Completed 200 OK in 33ms (Views: 33.0ms | ActiveRecord: 0.0ms | Allocations: 2945)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:56:41 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.8ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.8ms | Allocations: 1847)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 04:57:26 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 698.0ms | Allocations: 42268)
+Completed 200 OK in 702ms (Views: 701.4ms | ActiveRecord: 0.0ms | Allocations: 42525)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 04:57:28 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.6ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.6ms | Allocations: 1847)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 10:38:13 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 313)
+  Rendered layout layouts/application.html.erb (Duration: 2370.8ms | Allocations: 29924)
+Completed 200 OK in 2529ms (Views: 2425.9ms | ActiveRecord: 0.0ms | Allocations: 34282)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 10:38:21 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (4.7ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 261ms (Views: 176.0ms | ActiveRecord: 19.3ms | Allocations: 8861)
+
+
+  [1m[36mAddbook Load (2.3ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+Started GET "/" for 127.0.0.1 at 2023-07-12 10:44:16 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 1149.9ms | Allocations: 42359)
+Completed 200 OK in 1168ms (Views: 1166.0ms | Allocations: 42620)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 10:44:18 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (7.0ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 30ms (Views: 29.3ms | ActiveRecord: 8.1ms | Allocations: 1974)
+
+
+Started POST "/api/v1/addbooks/create" for 127.0.0.1 at 2023-07-12 11:04:28 +0530
+Processing by Api::V1::AddbooksController#create as */*
+  Parameters: {"name"=>"sasdasd", "age"=>"23", "gender"=>"m", "mob"=>"8786776", "address"=>"bvgcvhgcg", "addbook"=>{"name"=>"sasdasd", "age"=>"23", "mob"=>"8786776", "gender"=>"m", "address"=>"bvgcvhgcg"}}
+[31mUnpermitted parameter: :addbook. Context: { controller: Api::V1::AddbooksController, action: create, request: #<ActionDispatch::Request:0x0000025332e79b18>, params: {"name"=>"sasdasd", "age"=>"23", "gender"=>"m", "mob"=>"8786776", "address"=>"bvgcvhgcg", "controller"=>"api/v1/addbooks", "action"=>"create", "addbook"=>{"name"=>"sasdasd", "age"=>"23", "mob"=>"8786776", "gender"=>"m", "address"=>"bvgcvhgcg"}} }[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:8:in `create'
+  [1m[36mAddbook Create (3.8ms)[0m  [1m[32mINSERT INTO `addbooks` (`name`, `age`, `mob`, `gender`, `address`, `created_at`, `updated_at`) VALUES ('sasdasd', 23, '8786776', 'm', 'bvgcvhgcg', '2023-07-12 05:34:28.474045', '2023-07-12 05:34:28.474045')[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (5.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:8:in `create'
+Completed 200 OK in 52ms (Views: 1.7ms | ActiveRecord: 11.2ms | Allocations: 3786)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 11:04:28 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.8ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.8ms | Allocations: 1986)
+
+
+Started POST "/api/v1/addbooks/create" for 127.0.0.1 at 2023-07-12 11:05:49 +0530
+Processing by Api::V1::AddbooksController#create as */*
+  Parameters: {"name"=>"jhsdfjhgsdhf", "age"=>"42", "gender"=>"m", "mob"=>"645484648", "address"=>"jhsdhjskjgsdf", "addbook"=>{"name"=>"jhsdfjhgsdhf", "age"=>"42", "mob"=>"645484648", "gender"=>"m", "address"=>"jhsdhjskjgsdf"}}
+[31mUnpermitted parameter: :addbook. Context: { controller: Api::V1::AddbooksController, action: create, request: #<ActionDispatch::Request:0x00000253325e71d0>, params: {"name"=>"jhsdfjhgsdhf", "age"=>"42", "gender"=>"m", "mob"=>"645484648", "address"=>"jhsdhjskjgsdf", "controller"=>"api/v1/addbooks", "action"=>"create", "addbook"=>{"name"=>"jhsdfjhgsdhf", "age"=>"42", "mob"=>"645484648", "gender"=>"m", "address"=>"jhsdhjskjgsdf"}} }[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:8:in `create'
+  [1m[36mAddbook Create (1.8ms)[0m  [1m[32mINSERT INTO `addbooks` (`name`, `age`, `mob`, `gender`, `address`, `created_at`, `updated_at`) VALUES ('jhsdfjhgsdhf', 42, '645484648', 'm', 'jhsdhjskjgsdf', '2023-07-12 05:35:50.166963', '2023-07-12 05:35:50.166963')[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:8:in `create'
+Completed 200 OK in 42ms (Views: 2.2ms | ActiveRecord: 8.6ms | Allocations: 2452)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 11:05:50 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.1ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 1.1ms | Allocations: 2125)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 11:54:54 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 20.6ms | Allocations: 313)
+  Rendered layout layouts/application.html.erb (Duration: 2502.5ms | Allocations: 69235)
+Completed 200 OK in 2751ms (Views: 2551.5ms | ActiveRecord: 0.0ms | Allocations: 73593)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 11:54:59 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.0ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 182ms (Views: 95.0ms | ActiveRecord: 22.6ms | Allocations: 9139)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 12:19:45 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (4.0ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 43ms (Views: 42.6ms | ActiveRecord: 5.1ms | Allocations: 2254)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 12:19:47 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 969.5ms | Allocations: 42320)
+Completed 200 OK in 992ms (Views: 990.5ms | ActiveRecord: 0.0ms | Allocations: 42578)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 12:19:49 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.9ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 40ms (Views: 38.5ms | ActiveRecord: 0.9ms | Allocations: 2125)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 12:33:06 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.1ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 2.0ms | Allocations: 2250)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 12:33:08 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 601.7ms | Allocations: 42345)
+Completed 200 OK in 609ms (Views: 608.2ms | ActiveRecord: 0.0ms | Allocations: 42603)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 12:33:09 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.9ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 45ms (Views: 43.4ms | ActiveRecord: 0.9ms | Allocations: 2133)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 12:34:58 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 313)
+  Rendered layout layouts/application.html.erb (Duration: 2094.3ms | Allocations: 69465)
+Completed 200 OK in 2195ms (Views: 2120.1ms | ActiveRecord: 0.0ms | Allocations: 73823)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 12:35:02 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.7ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 72ms (Views: 55.8ms | ActiveRecord: 9.3ms | Allocations: 9117)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 12:45:28 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 1131.8ms | Allocations: 42355)
+Completed 200 OK in 1147ms (Views: 1146.7ms | Allocations: 42616)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 12:51:51 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 313)
+  Rendered layout layouts/application.html.erb (Duration: 1976.8ms | Allocations: 69656)
+Completed 200 OK in 2073ms (Views: 2002.9ms | ActiveRecord: 0.0ms | Allocations: 74014)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 12:51:54 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.5ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 95ms (Views: 75.0ms | ActiveRecord: 10.1ms | Allocations: 9117)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 12:59:27 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 313)
+  Rendered layout layouts/application.html.erb (Duration: 1434.8ms | Allocations: 30664)
+Completed 200 OK in 1532ms (Views: 1461.3ms | ActiveRecord: 0.0ms | Allocations: 35022)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 12:59:29 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.3ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 63ms (Views: 49.0ms | ActiveRecord: 7.6ms | Allocations: 9117)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 13:00:52 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.8ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 41ms (Views: 39.3ms | ActiveRecord: 0.8ms | Allocations: 2133)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 13:04:49 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 652.5ms | Allocations: 42364)
+Completed 200 OK in 657ms (Views: 655.9ms | ActiveRecord: 0.0ms | Allocations: 42623)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 13:04:51 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.7ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.7ms | Allocations: 2125)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 13:05:03 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 88.1ms | Allocations: 2799)
+Completed 200 OK in 98ms (Views: 93.5ms | ActiveRecord: 0.0ms | Allocations: 3059)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 13:05:03 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.8ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 25ms (Views: 23.9ms | ActiveRecord: 0.8ms | Allocations: 2125)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 13:12:42 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 1015.7ms | Allocations: 42366)
+Completed 200 OK in 1021ms (Views: 1019.3ms | Allocations: 42623)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 13:12:43 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.9ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 58ms (Views: 57.1ms | ActiveRecord: 2.8ms | Allocations: 2245)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 13:59:54 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 75.3ms | Allocations: 2792)
+Completed 200 OK in 81ms (Views: 80.5ms | Allocations: 3049)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 13:59:55 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.7ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 34ms (Views: 33.5ms | ActiveRecord: 5.2ms | Allocations: 2250)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 14:03:49 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 648.0ms | Allocations: 42359)
+Completed 200 OK in 665ms (Views: 663.8ms | ActiveRecord: 0.0ms | Allocations: 42616)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 14:03:51 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.7ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.7ms | Allocations: 2125)
+
+
+Started DELETE "/api/v1/destroy/2" for 127.0.0.1 at 2023-07-12 14:03:57 +0530
+Processing by Api::V1::AddbooksController#destroy as */*
+  Parameters: {"id"=>"2", "addbook"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 398)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 14:04:06 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.7ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.7ms | Allocations: 2125)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 14:06:07 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 583.3ms | Allocations: 42339)
+Completed 200 OK in 600ms (Views: 599.7ms | ActiveRecord: 0.0ms | Allocations: 42596)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 14:06:08 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.7ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 28ms (Views: 26.2ms | ActiveRecord: 1.7ms | Allocations: 2125)
+
+
+Started DELETE "/api/v1/destroy/10" for 127.0.0.1 at 2023-07-12 14:06:14 +0530
+Processing by Api::V1::AddbooksController#destroy as */*
+  Parameters: {"id"=>"10", "addbook"=>{}}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 332)
+
+
+Started DELETE "/api/v1/destroy/10" for 127.0.0.1 at 2023-07-12 14:06:22 +0530
+Processing by Api::V1::AddbooksController#destroy as */*
+  Parameters: {"id"=>"10", "addbook"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 350)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 14:06:26 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 2755)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.0ms | Allocations: 3012)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 14:06:26 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.7ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.7ms | Allocations: 2125)
+
+
+Started DELETE "/api/v1/destroy/10" for 127.0.0.1 at 2023-07-12 14:06:33 +0530
+Processing by Api::V1::AddbooksController#destroy as */*
+  Parameters: {"id"=>"10", "addbook"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 338)
+
+
+  [1m[36mAddbook Load (1.5ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+Started DELETE "/api/v1/destroy/5" for 127.0.0.1 at 2023-07-12 14:10:27 +0530
+Processing by Api::V1::AddbooksController#destroy as */*
+  Parameters: {"id"=>"5", "addbook"=>{}}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 323)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 14:13:51 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 2745)
+Completed 200 OK in 26ms (Views: 23.9ms | Allocations: 3003)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 14:13:51 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.2ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 24ms (Views: 23.8ms | ActiveRecord: 3.3ms | Allocations: 2241)
+
+
+Started DELETE "/api/v1/destroy/1" for 127.0.0.1 at 2023-07-12 14:13:58 +0530
+Processing by Api::V1::AddbooksController#destroy as */*
+  Parameters: {"id"=>"1", "addbook"=>{}}
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 332)
+
+
+  [1m[36mAddbook Load (1.1ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+Started GET "/" for 127.0.0.1 at 2023-07-12 14:18:22 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 569.6ms | Allocations: 42367)
+Completed 200 OK in 578ms (Views: 578.0ms | ActiveRecord: 0.0ms | Allocations: 42624)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 14:18:23 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.7ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.7ms | Allocations: 2125)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 14:18:34 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 575.9ms | Allocations: 42339)
+Completed 200 OK in 591ms (Views: 590.3ms | ActiveRecord: 0.0ms | Allocations: 42596)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 14:18:36 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.8ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 38ms (Views: 33.4ms | ActiveRecord: 0.8ms | Allocations: 2125)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 14:18:50 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 632.6ms | Allocations: 42352)
+Completed 200 OK in 652ms (Views: 651.1ms | ActiveRecord: 0.0ms | Allocations: 42609)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 14:18:51 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.8ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.8ms | Allocations: 2132)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 14:19:47 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 612.1ms | Allocations: 42337)
+Completed 200 OK in 626ms (Views: 625.3ms | ActiveRecord: 0.0ms | Allocations: 42595)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 14:19:48 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.9ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.9ms | Allocations: 2125)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 14:24:58 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 560.7ms | Allocations: 42362)
+Completed 200 OK in 573ms (Views: 572.7ms | ActiveRecord: 0.0ms | Allocations: 42619)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 14:25:00 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.8ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.8ms | Allocations: 2128)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 14:25:37 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 561.1ms | Allocations: 42337)
+Completed 200 OK in 570ms (Views: 569.2ms | ActiveRecord: 0.0ms | Allocations: 42594)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 14:25:39 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.3ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 1.3ms | Allocations: 2125)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 14:25:58 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 551.4ms | Allocations: 42323)
+Completed 200 OK in 568ms (Views: 567.5ms | ActiveRecord: 0.0ms | Allocations: 42580)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 14:25:59 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.7ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.7ms | Allocations: 2125)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 14:26:09 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 80.8ms | Allocations: 2792)
+Completed 200 OK in 92ms (Views: 91.5ms | ActiveRecord: 0.0ms | Allocations: 3049)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 14:26:10 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.7ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 30ms (Views: 27.6ms | ActiveRecord: 0.7ms | Allocations: 2125)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 14:26:38 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 656.0ms | Allocations: 42345)
+Completed 200 OK in 670ms (Views: 669.9ms | ActiveRecord: 0.0ms | Allocations: 42602)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 14:26:40 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.7ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.7ms | Allocations: 2125)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 14:28:07 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 557.1ms | Allocations: 42370)
+Completed 200 OK in 571ms (Views: 570.5ms | ActiveRecord: 0.0ms | Allocations: 42627)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 14:28:08 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.0ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 1.0ms | Allocations: 2125)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 14:28:25 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 549.5ms | Allocations: 42326)
+Completed 200 OK in 559ms (Views: 558.7ms | ActiveRecord: 0.0ms | Allocations: 42583)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 14:28:26 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.8ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.8ms | Allocations: 2125)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 14:29:18 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 676.4ms | Allocations: 42354)
+Completed 200 OK in 687ms (Views: 685.6ms | ActiveRecord: 0.0ms | Allocations: 42611)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 14:29:20 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.5ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 13ms (Views: 9.4ms | ActiveRecord: 0.5ms | Allocations: 2125)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 14:29:56 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 553.8ms | Allocations: 42354)
+Completed 200 OK in 566ms (Views: 565.8ms | ActiveRecord: 0.0ms | Allocations: 42611)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 14:29:58 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.7ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.7ms | Allocations: 2125)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 14:30:25 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 538.8ms | Allocations: 42338)
+Completed 200 OK in 552ms (Views: 551.5ms | ActiveRecord: 0.0ms | Allocations: 42595)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 14:30:27 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.8ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.8ms | Allocations: 2125)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 14:38:02 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 33.3ms | Allocations: 2765)
+Completed 200 OK in 39ms (Views: 37.5ms | Allocations: 3022)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 14:38:03 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.6ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 40ms (Views: 39.2ms | ActiveRecord: 3.3ms | Allocations: 2241)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 14:40:38 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 32.3ms | Allocations: 313)
+  Rendered layout layouts/application.html.erb (Duration: 3681.1ms | Allocations: 70416)
+Completed 200 OK in 4038ms (Views: 3742.6ms | ActiveRecord: 0.0ms | Allocations: 74775)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 14:40:44 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.2ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 90ms (Views: 67.8ms | ActiveRecord: 9.6ms | Allocations: 9116)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 14:43:28 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 9.5ms | Allocations: 313)
+  Rendered layout layouts/application.html.erb (Duration: 1000.3ms | Allocations: 27252)
+Completed 200 OK in 1098ms (Views: 1029.2ms | ActiveRecord: 0.0ms | Allocations: 31610)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 14:43:31 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.9ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 86ms (Views: 62.7ms | ActiveRecord: 10.5ms | Allocations: 9121)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 14:49:57 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 1003.9ms | Allocations: 42595)
+Completed 200 OK in 1016ms (Views: 1015.3ms | Allocations: 42856)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 14:49:59 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.9ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 1.6ms | Allocations: 2254)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 14:50:01 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 76.3ms | Allocations: 2774)
+Completed 200 OK in 93ms (Views: 92.8ms | ActiveRecord: 0.0ms | Allocations: 3031)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 14:50:02 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.8ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 32ms (Views: 30.0ms | ActiveRecord: 0.8ms | Allocations: 2125)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 15:20:16 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 1004.8ms | Allocations: 42332)
+Completed 200 OK in 1058ms (Views: 1056.5ms | Allocations: 42592)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 15:20:18 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.4ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 42ms (Views: 38.9ms | ActiveRecord: 2.2ms | Allocations: 2248)
+
+
+Started DELETE "/api/v1/destroy/10" for 127.0.0.1 at 2023-07-12 15:20:26 +0530
+Processing by Api::V1::AddbooksController#destroy as */*
+  Parameters: {"id"=>"10", "addbook"=>{}}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 392)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 15:20:42 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 33.7ms | Allocations: 2747)
+Completed 200 OK in 48ms (Views: 45.9ms | ActiveRecord: 0.0ms | Allocations: 3004)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 15:20:43 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.7ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.7ms | Allocations: 2125)
+
+
+Started DELETE "/api/v1/destroy/1" for 127.0.0.1 at 2023-07-12 15:20:48 +0530
+Processing by Api::V1::AddbooksController#destroy as */*
+  Parameters: {"id"=>"1", "addbook"=>{}}
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 353)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 15:33:41 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 693.0ms | Allocations: 42338)
+Completed 200 OK in 711ms (Views: 706.8ms | Allocations: 42595)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 15:33:43 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (2.0ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 29ms (Views: 28.7ms | ActiveRecord: 3.1ms | Allocations: 2241)
+
+
+Started DELETE "/api/v1/addbooks/destroy/10" for 127.0.0.1 at 2023-07-12 15:33:51 +0530
+  
+ActionController::RoutingError (No route matches [DELETE] "/api/v1/addbooks/destroy/10"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-12 15:34:16 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 100.7ms | Allocations: 2793)
+Completed 200 OK in 108ms (Views: 107.0ms | ActiveRecord: 0.0ms | Allocations: 3051)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 15:34:17 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.0ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 28ms (Views: 25.5ms | ActiveRecord: 1.0ms | Allocations: 2126)
+
+
+Started DELETE "/api/v1/destroy/8" for 127.0.0.1 at 2023-07-12 15:34:31 +0530
+Processing by Api::V1::AddbooksController#destroy as */*
+  Parameters: {"id"=>"8", "addbook"=>{}}
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 332)
+
+
+Started DELETE "/api/v1/destroy/9" for 127.0.0.1 at 2023-07-12 15:34:38 +0530
+Processing by Api::V1::AddbooksController#destroy as */*
+  Parameters: {"id"=>"9", "addbook"=>{}}
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 335)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 15:43:44 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.9ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 3.5ms | Allocations: 2248)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 15:48:21 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 967.3ms | Allocations: 42346)
+Completed 200 OK in 982ms (Views: 977.6ms | ActiveRecord: 0.0ms | Allocations: 42603)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 15:48:48 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (2.0ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 23ms (Views: 20.5ms | ActiveRecord: 2.0ms | Allocations: 2125)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 15:48:51 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 848.7ms | Allocations: 42334)
+Completed 200 OK in 857ms (Views: 856.4ms | ActiveRecord: 0.0ms | Allocations: 42591)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 15:49:12 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 27.7ms | Allocations: 2750)
+Completed 200 OK in 40ms (Views: 39.2ms | ActiveRecord: 0.0ms | Allocations: 3007)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 15:50:34 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 80.8ms | Allocations: 2788)
+Completed 200 OK in 89ms (Views: 87.5ms | ActiveRecord: 0.0ms | Allocations: 3045)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 15:50:35 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.4ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 1.4ms | Allocations: 2125)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 15:52:42 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 882.2ms | Allocations: 42339)
+Completed 200 OK in 897ms (Views: 896.2ms | ActiveRecord: 0.0ms | Allocations: 42596)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 15:52:43 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.9ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 0.9ms | Allocations: 2125)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 15:53:01 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 32.8ms | Allocations: 2765)
+Completed 200 OK in 39ms (Views: 38.5ms | ActiveRecord: 0.0ms | Allocations: 3022)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 15:53:01 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.7ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 1.7ms | Allocations: 2125)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 16:00:36 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 1197.7ms | Allocations: 42365)
+Completed 200 OK in 1204ms (Views: 1202.5ms | Allocations: 42623)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 16:00:39 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (2.7ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 33ms (Views: 32.5ms | ActiveRecord: 3.7ms | Allocations: 2241)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 16:28:56 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (3.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 31.1ms | Allocations: 313)
+  Rendered layout layouts/application.html.erb (Duration: 2456.7ms | Allocations: 31497)
+Completed 200 OK in 2779ms (Views: 2531.6ms | ActiveRecord: 0.0ms | Allocations: 35855)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 16:29:00 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (2.9ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 151ms (Views: 109.3ms | ActiveRecord: 32.2ms | Allocations: 9116)
+
+
+Started POST "/api/v1/addbooks/create" for 127.0.0.1 at 2023-07-12 16:32:07 +0530
+Processing by Api::V1::AddbooksController#create as */*
+  Parameters: {"name"=>"Princi Mam", "age"=>"30", "gender"=>"F", "mob"=>"74846487", "address"=>"Delhi", "addbook"=>{"name"=>"Princi Mam", "age"=>"30", "mob"=>"74846487", "gender"=>"F", "address"=>"Delhi"}}
+[31mUnpermitted parameter: :addbook. Context: { controller: Api::V1::AddbooksController, action: create, request: #<ActionDispatch::Request:0x0000022cf628e928>, params: {"name"=>"Princi Mam", "age"=>"30", "gender"=>"F", "mob"=>"74846487", "address"=>"Delhi", "controller"=>"api/v1/addbooks", "action"=>"create", "addbook"=>{"name"=>"Princi Mam", "age"=>"30", "mob"=>"74846487", "gender"=>"F", "address"=>"Delhi"}} }[0m
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:8:in `create'
+  [1m[36mAddbook Create (11.0ms)[0m  [1m[32mINSERT INTO `addbooks` (`name`, `age`, `mob`, `gender`, `address`, `created_at`, `updated_at`) VALUES ('Princi Mam', 30, '74846487', 'F', 'Delhi', '2023-07-12 11:02:07.304483', '2023-07-12 11:02:07.304483')[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:8:in `create'
+Completed 200 OK in 48ms (Views: 1.8ms | ActiveRecord: 16.5ms | Allocations: 3710)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 16:32:07 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.8ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.8ms | Allocations: 2264)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 16:32:47 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 94.0ms | Allocations: 2748)
+Completed 200 OK in 107ms (Views: 104.1ms | ActiveRecord: 0.0ms | Allocations: 3006)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 16:32:48 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.9ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 19ms (Views: 17.2ms | ActiveRecord: 0.9ms | Allocations: 2264)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 16:35:27 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 984.8ms | Allocations: 42410)
+Completed 200 OK in 993ms (Views: 992.3ms | ActiveRecord: 0.0ms | Allocations: 42670)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 16:35:29 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.1ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 1.1ms | Allocations: 2271)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 16:45:44 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.8ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 88ms (Views: 86.6ms | ActiveRecord: 3.9ms | Allocations: 2394)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 16:45:45 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 902.9ms | Allocations: 42301)
+Completed 200 OK in 913ms (Views: 910.6ms | ActiveRecord: 0.0ms | Allocations: 42558)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 16:45:47 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.0ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 33ms (Views: 31.1ms | ActiveRecord: 1.0ms | Allocations: 2264)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 17:07:35 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (3.8ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 209ms (Views: 204.7ms | ActiveRecord: 11.3ms | Allocations: 2380)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 17:07:37 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 801.1ms | Allocations: 42335)
+Completed 200 OK in 812ms (Views: 811.1ms | ActiveRecord: 0.0ms | Allocations: 42593)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 17:07:39 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.9ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 34ms (Views: 31.4ms | ActiveRecord: 0.9ms | Allocations: 2264)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 17:08:37 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (3.4ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 78ms (Views: 74.0ms | ActiveRecord: 3.4ms | Allocations: 2264)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 17:08:37 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 1034.0ms | Allocations: 42330)
+Completed 200 OK in 1055ms (Views: 1045.9ms | ActiveRecord: 0.0ms | Allocations: 42587)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 17:08:40 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.6ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 84ms (Views: 82.8ms | ActiveRecord: 0.6ms | Allocations: 2264)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 17:09:18 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.9ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 38ms (Views: 34.4ms | ActiveRecord: 0.9ms | Allocations: 2264)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 17:11:57 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.7ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 78ms (Views: 75.6ms | ActiveRecord: 1.7ms | Allocations: 2264)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 17:11:58 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 901.8ms | Allocations: 42327)
+Completed 200 OK in 919ms (Views: 918.6ms | ActiveRecord: 0.0ms | Allocations: 42585)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 17:12:01 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.7ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 32ms (Views: 30.1ms | ActiveRecord: 0.7ms | Allocations: 2264)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 17:12:38 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (8.3ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 76ms (Views: 66.3ms | ActiveRecord: 8.3ms | Allocations: 2264)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 17:20:32 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (3.3ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 166ms (Views: 165.3ms | ActiveRecord: 6.4ms | Allocations: 2381)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 17:20:33 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 929.9ms | Allocations: 42325)
+Completed 200 OK in 951ms (Views: 949.6ms | ActiveRecord: 0.0ms | Allocations: 42582)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 17:20:35 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.7ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.7ms | Allocations: 2264)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 17:21:03 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.8ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 0.8ms | Allocations: 2264)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 17:21:05 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 929.1ms | Allocations: 42338)
+Completed 200 OK in 949ms (Views: 947.5ms | ActiveRecord: 0.0ms | Allocations: 42596)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 17:21:08 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (0.8ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 46ms (Views: 44.3ms | ActiveRecord: 0.8ms | Allocations: 2264)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 17:21:35 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.7ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 32ms (Views: 24.7ms | ActiveRecord: 1.7ms | Allocations: 2264)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 17:21:36 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 877.3ms | Allocations: 42355)
+Completed 200 OK in 892ms (Views: 890.5ms | ActiveRecord: 0.0ms | Allocations: 42613)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 17:21:38 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (2.3ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 25ms (Views: 20.9ms | ActiveRecord: 2.3ms | Allocations: 2264)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 17:23:16 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (2.3ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 55ms (Views: 52.4ms | ActiveRecord: 2.3ms | Allocations: 2264)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-12 17:23:17 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 177.2ms | Allocations: 2800)
+Completed 200 OK in 185ms (Views: 183.4ms | ActiveRecord: 0.0ms | Allocations: 3057)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 17:23:19 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.1ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 48ms (Views: 46.6ms | ActiveRecord: 1.1ms | Allocations: 2264)
+
+
+Started GET "/addbooks/create" for 127.0.0.1 at 2023-07-12 17:23:55 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/addbooks/create"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-12 17:24:01 +0530
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 825.8ms | Allocations: 42379)
+Completed 200 OK in 831ms (Views: 830.5ms | ActiveRecord: 0.0ms | Allocations: 42638)
+
+
+Started GET "/api/v1/addbooks/index" for 127.0.0.1 at 2023-07-12 17:24:03 +0530
+Processing by Api::V1::AddbooksController#index as */*
+  [1m[36mAddbook Load (1.0ms)[0m  [1m[34mSELECT `addbooks`.* FROM `addbooks`[0m
+  ↳ app/controllers/api/v1/addbooks_controller.rb:4:in `index'
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 1.0ms | Allocations: 2265)
+
+
